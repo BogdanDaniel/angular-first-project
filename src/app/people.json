@@ -1,0 +1,26 @@
+{
+  "peoples" : [{
+    "id": 1,
+    "name": "Ivascu Robert",
+    "phone": 123445,
+    "email": "iv@ssss.com"
+  },
+    {
+      "id": 2,
+      "name": "BBC",
+      "phone": 123445,
+      "email": "Bbc@ssss.com"
+    },
+    {
+      "id": 3,
+      "name": "I.R. NOT BBC",
+      "phone": 123445,
+      "email": "notBBC@ssss.com"
+    },
+    {
+      "id": 4,
+      "name": "Popescu Vladianus",
+      "phone": 123445,
+      "email": "iv@ssss.com"
+    }]
+}
