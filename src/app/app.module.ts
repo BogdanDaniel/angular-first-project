@@ -15,6 +15,8 @@ import { MatListModule } from '@angular/material/list';
 import { MatIconModule } from '@angular/material/icon';
 import {MatChipsModule} from '@angular/material/chips';
 import { PeopleDetailsComponent } from './people-details/people-details.component';
+import {HttpClient, HttpClientModule} from '@angular/common/http';
+import {AgendaService} from './agenda/agenda.service';
 
 
 @NgModule({
@@ -31,9 +33,10 @@ import { PeopleDetailsComponent } from './people-details/people-details.componen
     MatListModule,
     MatIconModule,
     MatChipsModule,
+    HttpClientModule,
     FormsModule
   ],
-  providers: [],
+  providers: [AgendaService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

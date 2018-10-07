@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { PEOPLES } from '../mocks-peoples';
 import { People } from '../people';
+import {HttpClient} from '@angular/common/http';
+import {AgendaService} from './agenda.service';
 
 export interface Section {
   name: string;
@@ -17,9 +19,15 @@ export interface Section {
 
 export class AgendaComponent implements OnInit {
 
-  constructor() { }
+  peoples: any;
+
+  constructor(private agendaService: AgendaService) { }
 
   ngOnInit() {
+  this.agendaService.getPeoples().subscribe(result => {
+    this.peoples = result.peoples;
+    console.log(this.peoples, 'This are peoples from agenda');
+  });
   }
 
   //one people
@@ -31,7 +39,7 @@ export class AgendaComponent implements OnInit {
   }
 
   //all the people
-  peoples = PEOPLES;
+//  peoples = PEOPLES;
 
   
 
