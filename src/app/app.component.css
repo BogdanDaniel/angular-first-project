@@ -1,0 +1,10 @@
+
+/* mat-grid-tile {
+    background: lightblue;
+  } */
+mat-grid-tile.side_left {
+    background-color: lightblue;
+}
+mat-grid-tile.side_right {
+    background-color: lightskyblue;
+}
